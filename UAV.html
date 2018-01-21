@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UAV</title>
+</head>
+<body>
+<div>
+    <div>
+        请<a href="javascript:void(0);" onclick="showFile()" >选择文件</a>或
+        <a href="javascript:void(0);" onclick="showContent()">直接输入内容</a>：
+        <input type="file" class="uavFile" style="display: block">
+        <textarea class="uavContent" style="display: none"></textarea>
+
+    </div>
+
+    <div>
+        请输入消息序号：
+        <input type="number" class="uavId">
+    </div>
+    <button onclick="search()">查询</button>
+    <div id="message"></div>
+</div>
+<script src="UAV.js"></script>
+</body>
+</html>
+<style>
+    .uavContent{
+        resize: none;
+        width: 200px;
+        height:200px;
+    }
+</style>
